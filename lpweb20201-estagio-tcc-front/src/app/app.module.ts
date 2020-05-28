@@ -1,3 +1,4 @@
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, DEFAULT_CURRENCY_CODE, LOCALE_ID } from '@angular/core';
 import { registerLocaleData } from '@angular/common';
@@ -12,6 +13,8 @@ import { PerfilComponent } from './perfil/perfil.component';
 import { LoginComponent } from './login/login.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao-encontrada.component';
+import { CadastrarPerfilComponent } from './cadastrar-perfil/cadastrar-perfil.component';
+
 
 registerLocaleData(localePt, 'pt', localePtExtra);
 
@@ -22,13 +25,15 @@ registerLocaleData(localePt, 'pt', localePtExtra);
     PerfilComponent,
     LoginComponent,
     SobreComponent,
-    PaginaNaoEncontradaComponent
+    PaginaNaoEncontradaComponent,
+    CadastrarPerfilComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+  
   ],
   providers: [
     {

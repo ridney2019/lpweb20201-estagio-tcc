@@ -33,4 +33,6 @@ export class PerfilComponent implements OnInit {
     this.auth$.logout();
     this.router.navigate(['/']);
   }
+
+  
 }
